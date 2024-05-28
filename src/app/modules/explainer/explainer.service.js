@@ -23,8 +23,6 @@ cloudinary.config({
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// OpenAI API Key
-
 
 // FUNCTION TO SAVE VDIEO AND TRANSCRIPT TO DB
 const createExplainerRequest = async (videoPath, transcriptionPath) => {
