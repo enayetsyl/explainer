@@ -24,7 +24,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // OpenAI API Key
-const API_KEY = "sk-proj-J9cqLGG0TC5qXOGUXWhgT3BlbkFJsajCOatJIe7vTQ5HJzVt";
+
 
 // FUNCTION TO SAVE VDIEO AND TRANSCRIPT TO DB
 const createExplainerRequest = async (videoPath, transcriptionPath) => {
@@ -254,7 +254,7 @@ function removeTimestamps(transcript) {
 async function getImageInfo(image) {
   const headers = {
     "Content-Type": "application/json",
-    Authorization: `Bearer ${API_KEY}`,
+    Authorization: `Bearer ${process.env.API_KEY}`,
   };
 
   let responses = [];
